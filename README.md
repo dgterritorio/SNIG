@@ -7,7 +7,7 @@ Este repositório é constituído pelo vários projetos que permitem adaptar o s
 
 - **core-geonetwork**: Corresponde ao código base do GeoNetwork, com a introdução de funcionalidade adicionais para dar resposta aos requisitos específicos do SNIG, em particular ao nível do modo como são pesquisados e filtrados os registos de metadados do catálogo.
 
--  **snig-service**: Módulo que adiciona ao GeoNetwork a funcionalidade de limitar as pesquisas rápidas ao catálogo (autocomplete) a determinados tipos de registos de metadados (dataset ou series, por exemplo). O catálogo do SNIG tem como lógica de funcionamento a pesquisa apenas a Conjuntos de Dados Geográficos e Séries de Conjuntos de Dados Geográficos, sendo a informação relativa aos respectivos serviços geográficos (visualização e/ou descarregamento) disponibilizada através da ficha de metadados de cada recurso. Este comportamente tem como objetivo reduzir o número de registos existente no catálogo, promovendo assim uma pesquisa mais fácil e rápida da informação.
+-  **snig-service**: Módulo que adiciona ao GeoNetwork a funcionalidade de limitar as pesquisas rápidas ao catálogo (autocomplete) a determinados tipos de registos de metadados (dataset ou series, por exemplo). O catálogo do SNIG tem como lógica de funcionamento a pesquisa apenas a Conjuntos de Dados Geográficos e Séries de Conjuntos de Dados Geográficos, sendo a informação relativa aos respectivos serviços geográficos (visualização e/ou descarregamento) disponibilizada através da ficha de metadados de cada recurso. Este comportamento tem como objetivo reduzir o número de registos existente no catálogo, promovendo assim uma pesquisa mais fácil e rápida da informação.
 
 -  **iso19139.pt.mig.2.0**: Implementação do schema plugin do GeoNework para o Perfil Nacional de Metadados de Informação Geográfica (MIG). Tendo como base o schema iso19139, implementa as regras de validação específicas do Perfil MIG e adiciona novos campos à indexação da informação dos metadados, de forma a permitir suportar as pesquisas que são disponibilizadas através do Registo Nacional de Dados Geográficos.
 
@@ -61,7 +61,7 @@ mvn jetty:run
 * Abrir a aplicação no browser através do endereço http://localhost:8080/geonetwork
 
 Para aceder ao catálogo através da vista (*skin*) customizada para o SNIG deverá adicionar-se o parâmetro *?view=snig* ao url de acesso à aplicação:
-- http://localhost:8080/geonetwork/srv/por/catalog.search?**view=snig**#/home
+- http://localhost:8080/geonetwork/srv/por/catalog.search?view=snig#/home
 
 ### A partir do ficheiro WAR
 
